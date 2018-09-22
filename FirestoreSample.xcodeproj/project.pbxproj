@@ -13,6 +13,7 @@
 		B72A370C21564C2F0099E193 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72A370A21564C2F0099E193 /* Main.storyboard */; };
 		B72A370E21564C310099E193 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B72A370D21564C310099E193 /* Assets.xcassets */; };
 		B72A371121564C310099E193 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72A370F21564C310099E193 /* LaunchScreen.storyboard */; };
+		B72A37192156616F0099E193 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B72A37182156616F0099E193 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B72A370D21564C310099E193 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B72A371021564C310099E193 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B72A371221564C320099E193 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B72A37182156616F0099E193 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C616DB065E490D837DD68C21 /* Pods-FirestoreSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirestoreSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirestoreSample/Pods-FirestoreSample.release.xcconfig"; sourceTree = "<group>"; };
 		E2519E0B4A0BCCA106AE29F3 /* Pods-FirestoreSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirestoreSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirestoreSample/Pods-FirestoreSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +78,7 @@
 				B72A370D21564C310099E193 /* Assets.xcassets */,
 				B72A370F21564C310099E193 /* LaunchScreen.storyboard */,
 				B72A371221564C320099E193 /* Info.plist */,
+				B72A37182156616F0099E193 /* GoogleService-Info.plist */,
 			);
 			path = FirestoreSample;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B72A371121564C310099E193 /* LaunchScreen.storyboard in Resources */,
+				B72A37192156616F0099E193 /* GoogleService-Info.plist in Resources */,
 				B72A370E21564C310099E193 /* Assets.xcassets in Resources */,
 				B72A370C21564C2F0099E193 /* Main.storyboard in Resources */,
 			);
@@ -162,15 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-FirestoreSample-checkManifestLockResult.txt",
 			);
@@ -183,8 +183,6 @@
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-FirestoreSample/Pods-FirestoreSample-frameworks.sh",
@@ -199,8 +197,6 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
