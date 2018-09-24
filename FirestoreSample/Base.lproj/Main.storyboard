@@ -71,7 +71,7 @@
                                 <rect key="frame" x="222" y="157" width="102" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <state key="normal" title="読み込み"/>
+                                <state key="normal" title="リロード"/>
                                 <connections>
                                     <action selector="getData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ci-OZ-fW7"/>
                                 </connections>

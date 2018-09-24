@@ -20,7 +20,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     var defaultStore : Firestore!
     
-    var id:Int = 0
     var todoList:[String] = []
     var memoList:[String] = []
     var idList:[String] = []
@@ -32,21 +31,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         myTableView.dataSource = self
         
         defaultStore = Firestore.firestore()
-        
-        //データベースからデータを取り出す。
-        defaultStore.collection("ToDoList").getDocuments() { (querySnapshot, err) in
-            if let err = err {
-                print("Error getting documents: \(err)")
-            } else {
-                for document in querySnapshot!.documents {
-                    print("\(document.documentID) => \(document.data())")
-                    self.idList.append(document.documentID)
-                    self.todoList.append(document.data()["ToDo"] as! String)
-                    self.memoList.append(document.data()["memo"] as! String)
-                }
-                self.myTableView.reloadData()
-            }
-        }
         
         //仮のサイズでツールバー生成
         let kbToolBar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 320, height: 40))
@@ -65,7 +49,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todoList.count
+        return idList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
